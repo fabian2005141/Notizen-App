@@ -4,7 +4,7 @@ Wurde in einer Code Jam Sitzung auf dem Discord-Server "Deutscher Entwickler Com
 
 
  
-|----------------------------------------------- Anleitung ------------------------------------------------|
+|---------------------------------------------# Anleitung #------------------------------------------------|
 |                                                                                                          |
 |                                           ### Datenschutz ###                                            |
 |   # Notiz Ortner : Alle Notizen werden in der appdata (win + r --> %appdata%) unter Notizen Ereichbar    |

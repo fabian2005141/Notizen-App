@@ -14,17 +14,17 @@
         <TextBox x:Name="NotizBox" HorizontalAlignment="Left" Height="479" Margin="154,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="762" Background="#FFEFC5FF" AcceptsTab="True" AcceptsReturn="True"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="407" VerticalAlignment="Top" Width="155" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,-1,0,0" SelectionChanged="listBox_SelectionChanged" IsEnabled="True"/>
 
-        <Button x:Name="Save_Button" Content="" HorizontalAlignment="Left" Height="50" Margin="0,406,0,0" VerticalAlignment="Top" Width="50" Click="save" Cursor="Hand" Foreground="{x:Null}" BorderBrush="{x:Null}">
+        <Button x:Name="Save_Button" Content="" HorizontalAlignment="Left" Height="50" Margin="0,406,0,0" VerticalAlignment="Top" Width="50" Click="ButtonClick" Cursor="Hand" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="src/save.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="New_Button" Content="" HorizontalAlignment="Left" Height="50" Margin="104,406,0,0" VerticalAlignment="Top" Width="50" Click="New_Notiz" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="-2.32,-3.939">
+        <Button x:Name="New_Button" Content="" HorizontalAlignment="Left" Height="50" Margin="104,406,0,0" VerticalAlignment="Top" Width="50" Click="ButtonClick" BorderBrush="{x:Null}" Foreground="{x:Null}" RenderTransformOrigin="-2.32,-3.939">
             <Button.Background>
                 <ImageBrush ImageSource="src/add-library.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="Delete_Button" Content="" HorizontalAlignment="Left" Height="50" Margin="53,406,0,0" VerticalAlignment="Top" Width="50" Click="delete" Cursor="Hand" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="Delete_Button" Content="" HorizontalAlignment="Left" Height="50" Margin="53,406,0,0" VerticalAlignment="Top" Width="50" Click="ButtonClick" Cursor="Hand" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="src/delete (1).png"/>
             </Button.Background>
@@ -33,8 +33,8 @@
         <Grid Name="Grid_new" HorizontalAlignment="Left" Height="88" Margin="331,167,0,0" VerticalAlignment="Top" Width="336" Background="#FF91F98D" Visibility="Hidden">
             <Label x:Name="lable" Content="Gib den Namen für die neue Notiz ein:" HorizontalAlignment="Left" Height="29" Margin="11,7,0,0" VerticalAlignment="Top" Width="324"/>
             <TextBox x:Name="textBox_new" HorizontalAlignment="Left" Height="23" Margin="14,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304"/>
-            <Button x:Name="ok_button" Content="OK" HorizontalAlignment="Left" Height="20" Margin="14,61,0,0" VerticalAlignment="Top" Width="98" Background="#FF008420" Click="ok_create"/>
-            <Button x:Name="abbruch_button" Content="Abbruch" HorizontalAlignment="Left" Height="20" Margin="220,61,0,0" VerticalAlignment="Top" Width="98" Background="#FFF1352C" Click="abbruch_create"/>
+            <Button x:Name="ok_button" Content="OK" HorizontalAlignment="Left" Height="20" Margin="14,61,0,0" VerticalAlignment="Top" Width="98" Background="#FF008420" Click="ButtonClick"/>
+            <Button x:Name="abbruch_button" Content="Abbruch" HorizontalAlignment="Left" Height="20" Margin="220,61,0,0" VerticalAlignment="Top" Width="98" Background="#FFF1352C" Click="ButtonClick"/>
         </Grid>
         <Grid Name="Save_msg" HorizontalAlignment="Left" Height="51" Margin="0,354,0,0" VerticalAlignment="Top" Width="154" Background="#FF5AFF00" Visibility="Hidden">
             <Label x:Name="save_debug" Content="Gespeichert" HorizontalAlignment="Center" Margin="0,13,0,0" VerticalAlignment="Top" Height="29" Width="152" FontFamily="Comic Sans MS" FontWeight="Bold" FontStyle="Italic" Visibility="Visible">

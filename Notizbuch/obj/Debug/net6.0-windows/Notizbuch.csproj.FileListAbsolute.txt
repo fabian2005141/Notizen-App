@@ -19,3 +19,24 @@ E:\Dokumente\Projekte\Code Jam\Notizbuch\Notizbuch\obj\Debug\net6.0-windows\refi
 E:\Dokumente\Projekte\Code Jam\Notizbuch\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.pdb
 E:\Dokumente\Projekte\Code Jam\Notizbuch\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.genruntimeconfig.cache
 E:\Dokumente\Projekte\Code Jam\Notizbuch\Notizbuch\obj\Debug\net6.0-windows\ref\Notizbuch.dll
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\bin\Debug\net6.0-windows\Notizbuch.exe
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\bin\Debug\net6.0-windows\Notizbuch.deps.json
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\bin\Debug\net6.0-windows\Notizbuch.runtimeconfig.json
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\bin\Debug\net6.0-windows\Notizbuch.dll
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\bin\Debug\net6.0-windows\Notizbuch.pdb
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.csproj.AssemblyReference.cache
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\App.g.cs
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch_MarkupCompile.cache
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch_MarkupCompile.lref
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\MainWindow.baml
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.g.resources
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.AssemblyInfoInputs.cache
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.AssemblyInfo.cs
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.csproj.CoreCompileInputs.cache
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.dll
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\refint\Notizbuch.dll
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.pdb
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\Notizbuch.genruntimeconfig.cache
+E:\Dokumente\Projekte\GitHub\CodeJam\Notizen-App\Notizbuch\obj\Debug\net6.0-windows\ref\Notizbuch.dll

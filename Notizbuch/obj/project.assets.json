@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dokumente\\Projekte\\Code Jam\\Notizbuch\\Notizbuch\\Notizbuch.csproj",
+      "projectUniqueName": "E:\\Dokumente\\Projekte\\GitHub\\CodeJam\\Notizen-App\\Notizbuch\\Notizbuch.csproj",
       "projectName": "Notizbuch",
-      "projectPath": "E:\\Dokumente\\Projekte\\Code Jam\\Notizbuch\\Notizbuch\\Notizbuch.csproj",
+      "projectPath": "E:\\Dokumente\\Projekte\\GitHub\\CodeJam\\Notizen-App\\Notizbuch\\Notizbuch.csproj",
       "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
-      "outputPath": "E:\\Dokumente\\Projekte\\Code Jam\\Notizbuch\\Notizbuch\\obj\\",
+      "outputPath": "E:\\Dokumente\\Projekte\\GitHub\\CodeJam\\Notizen-App\\Notizbuch\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

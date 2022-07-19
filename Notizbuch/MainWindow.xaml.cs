@@ -33,10 +33,7 @@ namespace Notizbuch
         static bool delitem = false;
         static bool x = false;
 
-
-
-
-        static void if_file()
+        static void if_file_exist()
         {
             if (!File.Exists(notizPath))
             {
@@ -49,7 +46,7 @@ namespace Notizbuch
             InitializeComponent();
             Grid_new.Visibility = Visibility.Hidden;
             Save_msg.Visibility = Visibility.Hidden;
-            if_file();
+            if_file_exist();
             notiz();    
         }
 
@@ -101,53 +98,71 @@ namespace Notizbuch
             delitem = false;
         }
         
-        public void save(object sender, RoutedEventArgs e)
-        {
-            string text = NotizBox.Text;
-            Debug.WriteLine(text);
-            File.WriteAllText(notizname, text);
-            Save_msg.Visibility = Visibility.Visible;
-        }
-
-        private void New_Notiz(object sender, RoutedEventArgs e)
-        {
-            Grid_new.Visibility = Visibility.Visible;
-        }
-
-        private void ok_create(object sender, RoutedEventArgs e)
-        {
-            string name = textBox_new.Text;
-            Create(notizPath + name + ".txt", " ");
-            textBox_new.Text = "";
-            listBox.Items.Add(name+".txt");
-            Grid_new.Visibility = Visibility.Hidden;
-        }
-
-        private void abbruch_create(object sender, RoutedEventArgs e)
-        {
-            textBox_new.Text = "";
-            Grid_new.Visibility = Visibility.Hidden;
         
+        public void ButtonClick(object sender,RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+
+            switch (button.Name)
+            {
+
+                // Save Funktion
+                case ("Save_Button"):
+                    Debug.WriteLine("Button save");
+                    string text = NotizBox.Text;
+                    Debug.WriteLine(text);
+                    File.WriteAllText(notizname, text);
+                    Save_msg.Visibility = Visibility.Visible;
+                    break;
+
+                // Neue Notiz Funktion
+                case ("New_Button"):
+                    Grid_new.Visibility = Visibility.Visible;
+                    break;
+
+                // Lösch button
+                case ("Delete_Button"):
+                    if (delitem == false)
+                    {
+                        delitem = true;
+                    }
+                    else
+                    {
+                        delitem = false;
+                        //  listBox.IsEnabled = true;
+                    }
+                    break;
+
+                //Grid New:
+                // OK Button
+                case ("ok_button"):
+                    string name = textBox_new.Text;
+                    Create(notizPath + name + ".txt", " ");
+                    textBox_new.Text = "";
+                    listBox.Items.Add(name + ".txt");
+                    Grid_new.Visibility = Visibility.Hidden;
+                    break;
+
+                // abbruch Button
+                case ("abbruch_button"):
+                    textBox_new.Text = "";
+                    Grid_new.Visibility = Visibility.Hidden;
+                    break;
+
+                default:
+                        Debug.WriteLine("Error, Button nicht gefunden");
+                    break;
+
+            }
+            
         }
 
+        //async Funktionen
         public async Task Create(string filePath, string text)
         {
-            await File.WriteAllTextAsync(filePath, text);  
+            await File.WriteAllTextAsync(filePath, text);
         }
 
-        private void delete(object sender, RoutedEventArgs e)
-        {
-            if (delitem == false)
-            {
-                delitem = true;
-            }else
-            {
-                delitem = false;
-              //  listBox.IsEnabled = true;
-            }
-        }
-        
-        
-        
+
     }
 }

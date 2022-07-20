@@ -26,13 +26,11 @@ namespace Notizbuch
     {
 
         static string notizPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/Notizen/";
-        //static string notizPath = @"E:\Notizen\";
-        static string[] notizen = { };
-        static string notizname;
-        static string offene_notiz;
+        static string openNotizName;
         static bool delitem = false;
-        static bool x = false;
+ 
 
+        // Schaut nach ob es den Notizen ortner in der appdata gibt und erstellt den ortner wenn nötig
         static void if_file_exist()
         {
             if (!File.Exists(notizPath))
@@ -50,6 +48,7 @@ namespace Notizbuch
             notiz();    
         }
 
+        //Importiert die Notizen aus dem Ortner
         public void notiz()
         {
             System.IO.DirectoryInfo ParentDirectory = new System.IO.DirectoryInfo(notizPath);
@@ -67,20 +66,21 @@ namespace Notizbuch
         {
             NotizBox.Text = "";
             string[] x = File.ReadAllLines(open);
-            notizname = open;
+            openNotizName = open;
             for (int i = 0; i < x.Length; i++)
             {
                 NotizBox.Text += x[i] +"\n";
             }
         }
 
+        // Wird ausgefürt, wenn item aus der listBox gedrückt wird
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listBox.SelectedItem != null)
             {
                 string item = listBox.SelectedItem.ToString();
                 openNotiz(notizPath + listBox.SelectedItem.ToString());
-                notizname = notizPath +
+                openNotizName = notizPath +
                  listBox.SelectedItem.ToString();
                 Save_msg.Visibility = Visibility.Hidden;
                 if (delitem == true)
@@ -91,6 +91,7 @@ namespace Notizbuch
             }
         }
         
+        // Löscht Notizen mit der endung .txt aus dem Notizenortner
         public void delete_item(string item)
         {
             File.Delete(notizPath + item);
@@ -98,7 +99,7 @@ namespace Notizbuch
             delitem = false;
         }
         
-        
+        // Funktionen von allen Buttons
         public void ButtonClick(object sender,RoutedEventArgs e)
         {
             Button button = sender as Button;
@@ -111,7 +112,7 @@ namespace Notizbuch
                     Debug.WriteLine("Button save");
                     string text = NotizBox.Text;
                     Debug.WriteLine(text);
-                    File.WriteAllText(notizname, text);
+                    File.WriteAllText(openNotizName, text);
                     Save_msg.Visibility = Visibility.Visible;
                     break;
 
@@ -149,6 +150,7 @@ namespace Notizbuch
                     Grid_new.Visibility = Visibility.Hidden;
                     break;
 
+                // Error 
                 default:
                         Debug.WriteLine("Error, Button nicht gefunden");
                     break;
